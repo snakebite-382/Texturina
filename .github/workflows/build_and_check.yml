@@ -1,16 +1,6 @@
 name: Build and Check
 
-on:
-  push:
-    branches:
-      - master
-    paths:
-      - sources/**
-  pull_request:
-    branches:
-      - master
-    paths:
-      - sources/**
+on: workflow_dispatch
 
 jobs:
   static-font-ci-job:
